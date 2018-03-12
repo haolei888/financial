@@ -1,0 +1,32 @@
+{
+	"index.html": {
+		"resources": [
+			"home.html"
+		],
+		"refer": [
+			"home.html",
+			"me.html",
+			"jing.html",
+			"fa.html"
+		]
+	},
+	"home.html": {
+		"refer": [
+			"caifubao.html",
+			"deng.html"
+		]
+	},
+	"caifubao.html": {
+		"refer": [
+			"xiangmu.html",
+			"touzi.html",
+			"anquan.html",
+			"deng.html"
+		]
+	},
+	"jing.html": {
+		"refer": [
+			"caifubao.html"
+		]
+	}
+}

@@ -1,0 +1,141 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.mui-bar img{
+	float: right;
+	width: 1.5rem;
+	height:1.5rem;
+	margin-top: 0.6rem;
+	margin-right: 0.6rem;
+}
+.num-con{
+	width: 100%;
+	height: auto;
+	margin-top: 2.8rem;
+	float: left;
+	background: #fff;
+}
+.num{
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+}
+.num-top{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding-top: 1.7rem;
+	padding-bottom: 1.8rem;
+}
+.num-top h2{
+	color: #fa5d26;
+	font-size: 1.5rem;
+	font-weight: normal;	
+}
+.num-top p{
+	color: #b1b5b8;
+	font-size: 0.8rem;
+	padding-top: 0.6rem;
+}
+.num-bottom{
+	width: 100%;
+	height: auto;
+	float: left;
+	margin-top: -0.7rem;
+	/*border-top: 0.05rem solid #f85b3a;*/
+}
+.num-wan{
+	width: 33%;
+	height: auto;
+	float: left;
+	text-align: center;
+}
+.num-yue{
+	width: 33%;
+	height: auto;
+	float: left;
+	text-align: center;
+}
+.num-yuan{
+	width: 33%;
+	height: auto;
+	float: right;
+	text-align: center;
+}
+.num-wan-p{
+	color:#aaaeb1;
+	font-size: 0.8rem;
+	margin-top: 0.8rem;
+	margin-bottom: 0rem;
+}
+.num-wan-p-num{
+	color: #485158;
+	font-size: 1rem;
+}
+
+.feng-con{
+	width: 100%;
+	height: auto;
+	background: #fff;
+	float:left ;
+	margin-top: 0.7rem;
+}
+.feng{
+	width: 94%;
+	height: auto;
+	margin: 0 auto;
+}
+.shouyi{
+	height: 2.6rem;
+	line-height: 2.6rem;
+	border-bottom: #eaeaea solid 0.1rem;
+	/*display: inline-block;*/
+}
+.shouyi-img{
+	width: 1rem;
+	height: auto;
+}
+.shouyi h5{
+	color: #3d586d;
+}
+.shouyi-h{
+	display: inline-block;
+	color:#3d586d;
+	margin-right: 4.6rem;
+}
+.shouyi-hh{
+	display: inline-block;
+	color:#526373;
+	margin-right: 11.5rem;
+}
+.shouyi-hhh{
+	display: inline-block;
+	color:#526373;
+	margin-right: 9rem;
+}
+.shouyi-p{
+	display: inline-block;
+	color: #acb0b3;
+	font-size: 0.7rem;
+}
+.shouyi-p span{
+	color: #fa5d26;
+}
+.add{
+	width: 100%;
+	height:3rem;
+	float: left;
+	margin-top: 4rem;
+	position: absolute;
+	bottom: 0;
+	line-height:3rem ;
+	text-align: center;
+	background: #fa5d26;
+	font-size: 1.05rem;
+	color: #fff;
+}
+
+
+

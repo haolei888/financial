@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/home.css"/>
+	</head>
+
+	<body>
+		<div id="slider" class="mui-slider" >
+		  <div class="mui-slider-group mui-slider-loop">
+		    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+		    <div class="mui-slider-item mui-slider-item-duplicate">
+		      <a href="#">
+		        <img src="img/shou3_02.jpg">
+		      </a>
+		    </div>
+		    <!-- 第一张 -->
+		    <div class="mui-slider-item">
+		      <a href="#">
+		        <img src="img/shou1_02.jpg">
+		      </a>
+		    </div>
+		    <!-- 第二张 -->
+		    <div class="mui-slider-item">
+		      <a href="#">
+		        <img src="img/shou2_02.jpg">
+		      </a>
+		    </div>
+		    <!-- 第三张 -->
+		    <div class="mui-slider-item">
+		      <a href="#">
+		        <img src="img/shou3_02.jpg">
+		      </a>
+		    </div>
+		    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+		    <div class="mui-slider-item mui-slider-item-duplicate">
+		      <a href="#">
+		        <img src="img/shou1_02.jpg">
+		      </a>
+		    </div>
+		  </div>
+		  <div class="mui-slider-indicator">
+		    <div class="mui-indicator mui-active"></div>
+		    <div class="mui-indicator"></div>
+		    <div class="mui-indicator"></div>
+		  </div>
+		</div>
+		<!--登陆-->
+		<div class="deng-con">
+			<div id="deng"  id="xinxin">登陆/注册</div>
+		</div>
+		<!--财富宝-->
+		<div id="yicai" class="cai-con">
+				<h3><img src="img/shou-cai_04.jpg"/>财富宝1月期-A180105</h3>
+				<div class="guo-left">
+					<p class="guo-mun">5.5%</p>
+					<p class="guo-p">过往回报率</p>
+				</div>
+				<div class="guo-right">
+					<p class="guo-munber">1000</p>
+					<p class="guo-p">起投金额(元)</p>
+				</div>
+		</div>
+		
+		<div id="sancai" class="cai-con">
+				<h3><img src="img/shou-cai_04.jpg"/>财富宝3月期-A180120</h3>
+				<div class="guo-left">
+					<p class="guo-mun">6.0%</p>
+					<p class="guo-p">过往回报率</p>
+				</div>
+				<div class="guo-right">
+					<p class="guo-munber">1000</p>
+					<p class="guo-p">起投金额(元)</p>
+				</div>
+		</div>
+		<!--服务数据-->
+		<div class="foot">
+			已持续为用户提供出借服务收益
+			<p class="foot-num">7,476,420.00</p>
+		</div>
+		
+		
+		
+		
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script src="js/mobile-util.js"></script>
+		<script type="text/javascript">
+			mui.init();
+
+			var oYicai=document.getElementById('yicai');
+				oYicai.onclick=function(){
+//					alert(22);
+					mui.openWindow({
+						url: "caifubao.html",
+						id: "caifubao.html"
+					})
+				}	
+			var oSancai=document.getElementById('sancai');
+				oSancai.onclick=function(){
+					mui.openWindow({
+						url: "caifubao.html",
+						id: "caifubao.html"
+					})
+				}
+			//登陆/注册
+			var oDeng=document.getElementById('deng');
+				oDeng.onclick=function(){
+					mui.openWindow({
+						url: "deng.html",
+						id: "deng.html"
+					})
+				}
+			
+			
+			
+			
+			
+			
+			
+
+
+	</script>
+</html>

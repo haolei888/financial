@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/caifubao.css"/>
+	</head>
+
+	<body>
+		
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">财富宝1月期—A180105</h1>
+		    <img src="img/fucai_03.jpg"/>
+		</header>
+		
+		<div id="refreshContainer" class="num-con">
+			<div class="num">
+				<div class="num-top">
+					<h2>5.5%</h2>
+					<p>过往回报率</p>
+				</div>
+				<div class="num-bottom">
+					<div class="num-wan">
+						<p class="num-wan-p">项目金额(万)</p>
+						<p class="num-wan-p-num">100</p>
+					</div>
+					<div class="num-yue">
+						<p class="num-wan-p">项目期限(月)</p>
+						<p class="num-wan-p-num">1</p>
+					</div>
+					<div class="num-yuan">
+						<p class="num-wan-p">投起金额(元)</p>
+						<p class="num-wan-p-num">1000</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--收益起始日 ...-->
+		<div class="feng-con">
+			<div class="feng">
+				<div class="shouyi">
+					<img class="shouyi-img" src="img/fucai_07.jpg" />
+					<h5 class="shouyi-h">收益起始日</h5>
+					<p class="shouyi-p">次日计算收益，按回报率5.5%计算</p>
+				</div>
+				<div class="shouyi">
+					<img class="shouyi-img" src="img/fucai_07.jpg" />
+					<h5 class="shouyi-hh">还款方式</h5>
+					<p class="shouyi-p">到期还本还息</p>
+				</div>
+				<div class="shouyi">
+					<img class="shouyi-img" src="img/fucai_07.jpg" />
+					<h5 class="shouyi-hhh">预期可赚收益</h5>
+					<p class="shouyi-p">每万元可赚<span>45</span>元</p>
+				</div>
+			</div>
+		</div>
+		<!--项目详情 安全保障 ...--> 
+		<div class="feng-con">
+			<div class="feng">
+				<div id="xiangmu" class="shouyi">
+					<h5 class="shouyi-h">项目详情</h5>
+				</div>
+				<div id="an" class="shouyi">
+					<h5 class="shouyi-hh">安全保障</h5>
+				</div>
+				<div id="tou" class="shouyi">
+					<h5 class="shouyi-hhh">投资记录</h5>
+				</div>
+			</div>
+		</div>
+		<!--立即加入-->
+		<div class="add" id="btn-add">立即加入</div>
+		
+		
+		
+		
+		
+		
+		
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			function dwon() {
+				setTimeout(function() {					
+					mui('#refreshContainer').pullRefresh().endPulldownToRefresh();
+				}, 1000)
+			}
+			mui.init({
+				pullRefresh: {
+					container: "#refreshContainer", //下拉刷新容器标识，querySelector能定位的css选择器均可，比如：id、.class等
+					down: {
+						contentdown: "下拉可以刷新", //可选，在下拉可刷新状态时，下拉刷新控件上显示的标题内容
+						contentover: "释放立即刷新", //可选，在释放可刷新状态时，下拉刷新控件上显示的标题内容
+						contentrefresh: "正在刷新...", //可选，正在刷新状态时，下拉刷新控件上显示的标题内容
+						callback: dwon //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+					}
+				}
+			});
+			var oXiang=document.getElementById('xiangmu');
+			oXiang.onclick=function(){
+//				alert(22);
+				mui.openWindow({
+						url: "xiangmu.html",
+						id: "xiangmu.html"
+					})
+			}
+			
+			var oXiang=document.getElementById('an');
+			oXiang.onclick=function(){
+				mui.openWindow({
+						url: "anquan.html",
+						id: "anquan.html"
+					})
+			}
+			var oXiang=document.getElementById('tou');
+			oXiang.onclick=function(){
+				mui.openWindow({
+						url: "touzi.html",
+						id: "touzi.html"
+					})
+			}
+			//立即加入
+			var oAdd=document.getElementById('btn-add');
+			oAdd.onclick=function(){
+				mui.openWindow({
+						url: "deng.html",
+						id: "deng.html"
+					})
+			}		
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,75 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.feng-con{
+	width: 100%;
+	height: auto;
+	background: #fff;
+	float:left;
+	margin-top:2.8rem;
+}
+.feng{
+	width: 94%;
+	height: auto;
+	margin: 0 auto;
+}
+.shouyi{
+	height: 2.6rem;
+	line-height: 2.6rem;
+	border-bottom: #eaeaea solid 0.1rem;
+}
+.shouyi-img{
+	width: 1rem;
+	height: auto;
+}
+.shouyi h5{
+	color: #3d586d;
+}
+.shouyi-h{
+	display: inline-block;
+	color:#3d586d;
+	margin-right: 6.9rem;
+}
+.shouyi-hh{
+	display: inline-block;
+	color:#526373;
+	margin-right: 6rem;
+}
+.shouyi-hhh{
+	display: inline-block;
+	color:#526373;
+	margin-right: 3rem;
+}
+.shouyi-p{
+	display: inline-block;
+	color: #acb0b3;
+	font-size: 0.7rem;
+}
+.shouyi3{
+	text-align: center;
+}
+.shouyi-hhh3{
+	display: inline-block;
+	color:#526373;
+	margin-right: 3rem;
+}
+.shouyi-p3{
+	display: inline-block;
+	color: #acb0b3;
+	font-size: 0.7rem;
+	padding-top: 0.5rem;
+}
+.chu-con{
+	width: 100%;
+	height: auto;
+	background: #fff;
+	float:left;
+	margin-top: 0.7rem;
+}
+.chu{
+	width: 94%;
+	height: auto;
+	margin: 0 auto;
+}

@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>发现</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/fa.css"/>
+	</head>
+
+	<body>
+		
+		<header class="mui-bar mui-bar-nav">
+		    <h1 class="mui-title">发现</h1>
+		    <img id="fa-img" src="img/fa3_03.jpg" />
+		</header>
+		<div id="slider" class="mui-slider" >
+		  <div class="mui-slider-group mui-slider-loop">
+		    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+		    <div class="mui-slider-item mui-slider-item-duplicate">
+		      <a href="#">
+		        <img src="img/fa3_06.jpg">
+		      </a>
+		    </div>
+		    <!-- 第一张 -->
+		    <div class="mui-slider-item">
+		      <a href="#">
+		        <img src="img/fa1_02.jpg">
+		      </a>
+		    </div>
+		    <!-- 第二张 -->
+		    <div class="mui-slider-item">
+		      <a href="#">
+		        <img src="img/fa2_02.jpg">
+		      </a>
+		    </div>
+		    <!-- 第三张 -->
+		    <div class="mui-slider-item">
+		      <a href="#">
+		        <img src="img/fa3_06.jpg">
+		      </a>
+		    </div>
+		    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+		    <div class="mui-slider-item mui-slider-item-duplicate">
+		      <a href="#">
+		        <img src="img/fa1_02.jpg">
+		      </a>
+		    </div>
+		  </div>
+		  <div class="mui-slider-indicator">
+		    <div class="mui-indicator mui-active"></div>
+		    <div class="mui-indicator"></div>
+		    <div class="mui-indicator"></div>
+		  </div>
+		</div>
+		<!--签到-->
+		<div class="qian-content">
+			<div class="qian-con">
+				<div class="qian" id="qian">
+					<img src="img/fa3_09.jpg"/>
+					<h2>点击签到</h2>
+				</div>
+				<div class="yi" id="yi">
+					<img src="img/fa3_11.jpg"/>
+					<h2>一周免签</h2>
+				</div>
+			</div>
+			<p class="qian-p">平均每人奖励<span class="qian-span">0.14</span>元，等于帮您多投了<span class="qian-span">1008</span>元</p>
+		</div>
+		<!--新手任务-->
+		<div class="xin-content">
+			<div id="xin"><img src="img/fa2_03.jpg"/></div>
+			<div id="xin"><img src="img/fa2_05.jpg"/></div>	
+			<div id="xin"><img src="img/fa2_07.jpg"/></div>	
+				
+			
+		</div>
+		
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			var qian=document.getElementById('qian')
+			qian.onclick=function(){
+				mui.openWindow({
+					url: "deng.html",
+					id: "deng.html"
+				})
+			}
+			var qian=document.getElementById('yi')
+			qian.onclick=function(){
+				mui.openWindow({
+					url: "deng.html",
+					id: "deng.html"
+				})
+			}
+			var qian=document.getElementById('xin')
+			qian.onclick=function(){
+				mui.openWindow({
+					url: "deng.html",
+					id: "deng.html"
+				})
+			}
+			
+			
+		</script>
+	</body>
+
+</html>

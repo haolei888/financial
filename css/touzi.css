@@ -1,0 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.feng-con{
+	width: 100%;
+	height: auto;
+	background: #fff;
+	float:left ;
+	margin-top: 2.8rem;
+}
+.feng{
+	width: 94%;
+	height: auto;
+	margin: 0 auto;
+}
+.shouyi{
+	height: 2.6rem;
+	line-height: 2.6rem;
+	border-bottom: #eaeaea solid 0.1rem;
+	/*border-bottom: #000 solid 0.1rem;*/
+	/*background: pink;*/
+}
+.shouyi li{
+	float: left;
+	padding-left:3rem;
+	color:#3d586d;
+	font-size: 0.8rem;
+}

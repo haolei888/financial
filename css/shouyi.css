@@ -1,0 +1,84 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.shou-con{
+	width: 100%;
+	height: auto;
+	background: #fff;
+	border-bottom: 0.02rem solid #ececec;
+	border-top: 0.02rem solid #ececec;
+	float: left;
+	margin-top:3rem;
+	padding-top: 0.58rem;
+	
+}
+.shou-con h3{
+	line-height: 1.5rem;
+	color: #35424a;
+	font-size: 0.34rem;
+	font-weight: normal;
+	padding-left: 0.65rem;
+	
+}
+.js-p{
+	width: 96%;
+	margin: 0 auto;
+	border-top: 0.02rem solid #ececec;
+	padding-left: 0.32rem;
+}
+.shou-jie{
+	color: #dd6c5e;
+	font-size: 0.32rem;
+	margin-top: 0.37rem;
+}
+.shou-p{
+	color: #b4b4b4;
+	font-size: 0.32rem;
+	margin-top: -0.27rem;
+	margin-bottom: 0.8rem;
+}
+.shou-con img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.shi-con{
+	width: 100%;
+	height:auto;
+	background: #fff;
+	float: left;
+	padding-top: 0.58rem;
+	margin-top: 0.3rem;
+	margin-bottom: 0.2rem;
+	border-bottom: 0.02rem solid #ececec;
+	border-bottom: 0.02rem solid #ececec;
+}
+.shi-con h3{
+	line-height: 1.5rem;
+	color: #35424a;
+	font-size: 0.34rem;
+	font-weight: normal;
+	padding-left: 0.65rem;	
+}
+.js-zhi{
+	color: #b4b4b4;
+	font-size: 0.32rem;
+	margin-top: -0.32rem;
+	margin-bottom: 1.69rem;
+}
+.ruo{
+	color: #b1b1b1;
+	font-size: 0.32rem;
+	margin-top: 0.37rem;
+	margin-bottom: 0.77rem;
+}
+.js-zhu{
+	float: right;
+	color: #d99900;
+	font-size: 0.28rem;
+	margin-right: 0.45rem;
+}
+
+
