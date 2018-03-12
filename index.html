@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>底部</title>
+   
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <style type="text/css">
+    	.mui-tab-item img{
+    		text-align: center;
+			width: 1rem;
+			height: 1rem;
+		}
+    </style>
+</head>
+<body>
+	<nav class="mui-bar mui-bar-tab">
+	    <a class="mui-tab-item mui-active" href="home.html">
+	        <span class="mui-icon"><img src="img/foot_03.jpg"/></span> 
+	        <span class="mui-tab-label">首页</span>
+	    </a>
+	    <a class="mui-tab-item" href="jing.html">
+	        <span class="mui-icon"><img src="img/foot_05.jpg"/></span>
+	        <span class="mui-tab-label">精选</span>
+	    </a>
+	    <a class="mui-tab-item" href="fa.html">
+	        <span class="mui-icon"><img src="img/foot_07.jpg"/></span>
+	        <span class="mui-tab-label">发现</span>
+	    </a>
+	    <a class="mui-tab-item" href="me.html">
+	        <span class="mui-icon"><img src="img/footer_03.jpg"/></span>
+	        <span class="mui-tab-label">我的</span>
+	    </a>
+	</nav>
+</body>
+<script src="js/mui.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+    mui.init();
+    mui.plusReady(function(){
+      		var webview=plus.webview.currentWebview();
+      		var arrView=[
+      			"home.html",
+      			"jing.html",
+      			"fa.html",
+      			"me.html"
+      		]
+      		var styles={
+      			top:'0px',
+      			bottom:'50px'
+      		}
+      		for(var i=0;i<arrView.length;i++){
+      			var item=plus.webview.create(arrView[i],arrView[i],styles);
+      				item.hide();
+					webview.append(item);
+				}
+				plus.webview.show(arrView[0]);
+			mui('.mui-bar').on('tap', 'a', function() {
+				var hrefUrl = this.getAttribute('href');					
+					plus.webview.show(hrefUrl);
+			})  		
+      	})
+    
+    
+</script>
+</html>
